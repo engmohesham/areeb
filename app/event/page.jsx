@@ -16,9 +16,9 @@ export default function Page() {
   useEffect(() => {
     async function fetchBranches() {
       try {
-        const response = await fetch("https://areeb.cowdly.com/en/api/branches/");
+        const response = await fetch("https://areeb.cowdly.com/en/api/types/");
         const data = await response.json();
-        const allBranches = [{ id: 'all', name: 'جميع الفروع' }, ...data];
+        const allBranches = [{ id: 'all', name: 'جميع الانواع' }, ...data];
         setBranches(allBranches);
       } catch (error) {
         console.error("Error fetching branches:", error);
