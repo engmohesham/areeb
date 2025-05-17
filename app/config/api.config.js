@@ -8,24 +8,24 @@ export const API_ROUTES = {
     EVENT_DETAILS: (id) => `/en/api/events/${id}/`,
     
     // Reservations
-    RESERVATIONS: '/en/api/reservations',
-    CANCEL_RESERVATION: (id) => `/en/api/reservations/${id}/cancel`,
+    RESERVATIONS: '/en/api/reservations/',
+    CANCEL_RESERVATION: (id) => `/en/api/reservations/${id}/cancel/`,
     
     // Auth
-    LOGIN: '/en/api/users/login',
-    REGISTER: '/en/api/users/register',
-    USER_PROFILE: '/en/api/users/user_profile',
-    PASSWORD_RESET: '/en/api/users/password_reset',
+    LOGIN: '/en/api/users/login/',
+    REGISTER: '/en/api/users/register/',
+    USER_PROFILE: '/en/api/users/user_profile/',
+    PASSWORD_RESET: '/en/api/users/password_reset/',
     
     // Reports
-    REPORTS: '/en/api/reports',
-    RATINGS: '/en/api/ratings',
+    REPORTS: '/en/api/reports/',
+    RATINGS: '/en/api/ratings/',
     
     // Branches
-    BRANCHES: '/en/api/branches',
+    BRANCHES: '/en/api/branches/',
     
     // Payments
-    CARD_PAYMENT: '/en/api/payments/request-card-payment'
+    CARD_PAYMENT: '/en/api/payments/request-card-payment/'
 };
 
 // Helper function to construct full API URLs
