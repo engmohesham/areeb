@@ -120,7 +120,6 @@ export default function Booking({ setOpen, event, closed_date }) {
           method: 'POST',
           headers: getAuthHeaders(token),
           body: JSON.stringify({
-            date: formattedDate,
             event: event,
             payment_method: payment
           })
